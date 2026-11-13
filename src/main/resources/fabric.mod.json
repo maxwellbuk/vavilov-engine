@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "vavilov-engine",
+	"version": "${version}",
+	"name": "VavilovEngine",
+	"description": "Minecraft движок, расширяющий возможности создания приключенческих карт",
+	"authors": [
+		"maxwellbuk"
+	],
+	"contact": {
+		"homepage": "https://github.com/maxwellbuk/vavilov-engine",
+		"sources": "https://github.com/maxwellbuk/vavilov-engine"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sprites/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mb.vavilov_engine.StartServer"
+		],
+		"client": [
+			"mb.vavilov_engine.client.StartClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
